@@ -43,7 +43,7 @@ All settings are passed by environment variables:
 |NGINX_THROTTLE_MEM_LIMIT  |`10m`        | No     |
 |NGINX_THROTTLE_RATE_LIMIT |`100r/s`     | No     |
 |NGINX_THROTTLE_BURST      |`10`         | No     |
-|NGINX_PROXY_TIMEOUT       |`90`         | No     |
+|NGINX_PROXY_TIMEOUT       |`10`         | No     |
 |NGINX_WORKER_CONNECTIONS  |`4096`       | No     |
 |NGINX_LISTEN_HOST         |`0.0.0.0`    | No     |
 |NGINX_LISTEN_PORT         |`80`         | No     |
@@ -64,9 +64,9 @@ Set the port where Nginx should listen on.
 
 ##### NGINX_PROXY_TIMEOUT
 - Value type is _number_.
-- Default value is `90`.
+- Default value is `10`.
 
-Number in seconds for proxy timeout.
+Number in seconds for proxy_connect_*_timeout.
 
 ##### NGINX_THROTTLE_BURST
 - Value type is _number_.
