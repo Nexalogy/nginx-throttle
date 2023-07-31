@@ -1,5 +1,3 @@
-#FROM nginx:1.25.1-alpine
-#FROM axizdkr/tengine:alpine-3.17
 FROM alpine:3.17
 
 # Add all useful utilitaries for maintenance
